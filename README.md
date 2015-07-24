@@ -21,7 +21,7 @@ docker run -it proxmark3-build
 Once that's done, just pull the tarball out of the container using 'docker cp' from the location that it gives you in stdout. If you're not attached to your container whilst Proxmark3 is building, to get the tarball location, just use:
 
 ```
-docker logs --tail=10 *container_id*
+docker logs --tail=10 <container_id>
 ```
 
 The command above will simply show you the last 10 lines of stdout from the build process. The tarball location will be at the very end.
