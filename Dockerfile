@@ -26,7 +26,7 @@ RUN mkdir /proxmark3 /packages
 VOLUME /packages
 
 # Pull and unpack latest devkitPro ARM toolchain
-RUN wget http://kent.dl.sourceforge.net/project/devkitpro/devkitARM/devkitARM_r43-x86_64-linux.tar.bz2 -O - |\
+RUN wget http://skylink.dl.sourceforge.net/project/devkitpro/devkitARM/devkitARM_r45/devkitARM_r45-x86_64-linux.tar.bz2 -O - |\
     tar xfvj - -C /proxmark3
 
 # Set build environment variables
