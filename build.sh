@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Do an initial git clone if /proxmark3/git doesn't contain a git repo
-[ ! -d /proxmark3/git/.git ] && git clone https://github.com/Proxmark/proxmark3.git /proxmark3/git
+[ ! -d /proxmark3/git/.git ] && git clone https://github.com/iceman1001/proxmark3.git /proxmark3/git
 
 # Cleanup source dir and pull latest
 cd /proxmark3/git
@@ -9,7 +9,7 @@ make clean
 git pull -u origin master
 
 # Build
-make
+make all
 
 # Create tarball
 GIT_VERSION=`git rev-parse --short HEAD`
