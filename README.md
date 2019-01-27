@@ -1,5 +1,8 @@
-# docker-proxmark3
+# Donate
+Nothing says thank you as much as a donation.
+https://www.patreon.com/iceman1001
 
+# docker-proxmark3
 This is a simple Dockerfile and build script to cleanly build and bundle the latest git HEAD of Proxmark3. This will (hopefully) leave you with a neat tarball containing the latest proxmark3 client, flasher, bootrom and fullimage.
 
 At the moment this will only build x86_64 ELF binaries, but there's nothing stopping someone from pulling in i386 build deps or targeting other alternate architectures.
